@@ -1,0 +1,109 @@
+
+
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+outline: none;  /*linha azul que fica em volta*/
+}
+
+body {
+    background-color: #fff;
+        background-image: url('/assets/papel-de-parede1.jpg');
+        background-size: 100%;
+}
+
+main {
+    width: 375px;
+    background: #DBE4D1;
+    border-radius: 20px;
+    margin: 35px auto 35px;
+    padding: 44px 24px 23px;
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select, input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700px;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+
+.convert-button {
+    padding: 15px 30px;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    background-color: #686D64;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {transform: scale(1);
+    }
+}
+
+.shadown-box {
+    border: 1px solid #434842;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px #7A7F78;
+}
+
+.arrow-img {
+    margin: 15px 0;
+    width: 80px;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
